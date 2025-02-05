@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome checker</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+        section {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            font-style: italic;
+            text-shadow: 2px 2px 2px goldenrod;
+        }
+        #text-input {
+            border: none;
+            border-bottom: 2px solid goldenrod;
+            color: goldenrod;
+            background: transparent;
+            font-size: 1.5rem;
+        }
+        #text-input:active {
+            border: none;
+        }
+        button {
+            background-color: olive;
+            color: white;
+            border: none;
+            border-radius: 14px;
+            padding: 10px 25px;
+            box-shadow: 1px 1px 1px goldenrod;
+        }
+        button:hover {
+            background-color: rgb(181, 181, 6);
+        }
+        label {
+            color: rgb(73, 73, 2);
+            font-size: 1.5rem;
+            font-family: sans-serif;
+        }
+        .meaning {
+            width: 40%;
+            /*height: 300px; */
+            padding: 10px ;
+            position: relative;
+            margin: auto;
+            background-color: olive;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            box-shadow: 2px 2px 2px goldenrod;
+        }
+        #result {
+            font-size: 1.5rem;
+            color: rgb(73, 73, 2);
+            font-family: sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <section class="conatiner">
+        <h1>You think you know a Palindrome?</h1>
+        <label for="text-input">Enter in text to check for a Palindrome:</label><br>
+        <input type="text" id="text-input" required>
+        <button type="button" id="check-btn">Check</button>
+        <p id="result"></p>
+    </section>
+
+    <div class="meaning">
+        <p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+    </div>
+
+
+
+    <script src="palindrome.js"></script>
+</body>
+</html>
